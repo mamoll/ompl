@@ -114,18 +114,18 @@ namespace ompl
                                         &BITstar::getConsiderApproximateSolutions, "0,1");
 
             // Register my progress info:
-            addPlannerProgressProperty("best cost DOUBLE", [this] { return bestCostProgressProperty(); });
-            addPlannerProgressProperty("number of segments in solution path INTEGER",
-                                       [this] { return bestLengthProgressProperty(); });
-            addPlannerProgressProperty("current free states INTEGER", [this] { return currentFreeProgressProperty(); });
-            addPlannerProgressProperty("current graph vertices INTEGER",
-                                       [this] { return currentVertexProgressProperty(); });
-            addPlannerProgressProperty("state collision checks INTEGER",
-                                       [this] { return stateCollisionCheckProgressProperty(); });
-            addPlannerProgressProperty("edge collision checks INTEGER",
-                                       [this] { return edgeCollisionCheckProgressProperty(); });
-            addPlannerProgressProperty("nearest neighbour calls INTEGER",
-                                       [this] { return nearestNeighbourProgressProperty(); });
+            addPlannerProgressProperty("best cost REAL", [this] { return bestCostProgressProperty(); });
+            // addPlannerProgressProperty("number of segments in solution path INTEGER",
+            //                            [this] { return bestLengthProgressProperty(); });
+            // addPlannerProgressProperty("current free states INTEGER", [this] { return currentFreeProgressProperty(); });
+            // addPlannerProgressProperty("current graph vertices INTEGER",
+            //                            [this] { return currentVertexProgressProperty(); });
+            // addPlannerProgressProperty("state collision checks INTEGER",
+            //                            [this] { return stateCollisionCheckProgressProperty(); });
+            // addPlannerProgressProperty("edge collision checks INTEGER",
+            //                            [this] { return edgeCollisionCheckProgressProperty(); });
+            // addPlannerProgressProperty("nearest neighbour calls INTEGER",
+            //                            [this] { return nearestNeighbourProgressProperty(); });
 
             // Extra progress info that aren't necessary for every day use. Uncomment if desired.
             /*
